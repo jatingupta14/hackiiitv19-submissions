@@ -14,18 +14,18 @@ int main()
 
 
 int m,n,v,m1,n1,v1;
-cout<<"ENTER THE DATE WHEN YOU BOUGTH THE FOOD ITEMS IN DD MM YYYY"<<endl;
+cout<<"ENTER THE DATE OF PURCHASE OF FOOD ITEMS IN DD MM YYYY"<<endl;
 
 
 
 cin>>m>>n>>v;
-cout<<"ENTER THE DATE TO EAT THE FOOD ITEMS IN DD MM YYYY"<<endl;
+cout<<"ENTER THE DATE TO COOK THE FOOD ITEMS IN DD MM YYYY"<<endl;
 cin>>m1>>n1>>v1;
 
 int r=func(m1,n1,v1)-func(m,n,v);
 
     string a[10]={"Bread" ,"Butter","Cauliflower","Cheese","Fish","Eggs","Lemons", "Mushroom","Chicken","Tomato"};
-    int b[10]={4,15,4,10,2,5,4,4,4,5};
+    int b[10]={4,15,4,10,2,4,4,4,3,5};
     int i=0;
 
 
@@ -36,16 +36,11 @@ cout.width(17);
         cout<<b[i]<<endl;
 
     }
-//int a1[10];
+
+
 string b1[10];
-/*cout<<"ENTER DAYS OF  CORRESPONDING ITEMS"<<endl;
-for(i=0;i<10;i++)
-{ cout.setf(ios::left);
-cout.width(17);
-    cout<<a[i];
-    cin>>a1[i];
-    }
-    */
+
+
     cout<<"CONDITION OF ITEMS"<<endl;
     int j=0;
     for(i=0;i<10;i++)
@@ -54,7 +49,7 @@ cout.width(17);
    cout<<a[i]   ;
    if(b[i]-r<=0)
     {
-            cout<<"EXPIERED"<<endl;
+            cout<<"EXPIERED FOOD"<<endl;
             b1[j]=a[i];
             j++;
     }
@@ -85,12 +80,12 @@ if(c[0].compare(a[i])==0||c[1].compare(a[i])==0||c[3].compare(a[i])==0)
 }
 }
 
-
+cout<<endl;
 if(k1==3)
 {
 if(k!=0)
 {
-    cout<<"ITEMS USED ARE ROTTEN";
+    cout<<"ITEMS USED ARE ROTTEN"<<endl;
 }
 else
     {
@@ -110,11 +105,11 @@ else
             if((c[0].compare("Tomato")==0||c[1].compare("Tomato")==0||c[2].compare("Tomato")==0)&&(c[0].compare("Mushroom")==0||c[1].compare("Mushroom")==0||c[2].compare("Mushroom")==0))
       cout<<"VEGGI WRAPS"<<endl<<"CATEGORY->     ENTREE BREAKFAST"<<endl<<"COOKING TIME-> 15 Min"<<endl<<"CALORIES->     67"<<endl<<"FAT->         08"<<endl<<"CARBS->        05"<<endl<<"PROTEINS->     4"<<endl;
             if(c[0].compare("Chicken")==0||c[1].compare("Chicken")==0||c[2].compare("Chicken")==0)
-      cout<<"RAUNCH CHICKEN "<<endl<<"CATEGORY->    ENTREE CHICKEN"<<endl<<"COOKING TIME->50 Min"<<endl<<"CALORIES->    276"<<endl<<"FATS->         6"<<endl<<"CARBS->        3"<<endl<<"PROTEINS->     49"<<endl;
+      cout<<"RAUNCH CHICKEN "<<endl<<"CATEGORY->    ENTREE CHICKEN"<<endl<<"COOKING TIME-> 50 Min"<<endl<<"CALORIES->     276"<<endl<<"FATS->         6"<<endl<<"CARBS->         3"<<endl<<"PROTEINS->     49"<<endl;
             if(c[0].compare("Fish")==0||c[1].compare("Fish")==0||c[2].compare("Fish")==0)
-      cout<<"CRISP BAKED FILLETS"<<endl<<"CATEGORY->   SEAFOOD"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    263"<<endl<<"FATS->         9"<<endl<<"CARBS->        37"<<endl<<"PROTEINS->     9"<<endl;
+      cout<<"CRISP BAKED FILLETS"<<endl<<"CATEGORY->    SEAFOOD"<<endl<<"COOKING TIME-> 20 Min"<<endl<<"CALORIES->     263"<<endl<<"FATS->         9"<<endl<<"CARBS->        37"<<endl<<"PROTEINS->     9"<<endl;
             if(c[0].compare("Bread")==0||c[1].compare("Bread")==0||c[2].compare("Bread")==0)
-      cout<<"STUFFED BREAD"<<endl<<"CATEGORY->    STARTER"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    87"<<endl<<"FATS->         8"<<endl<<"CARBS->        5"<<endl<<"PROTEINS->     3"<<endl;
+      cout<<"STUFFED BREAD"<<endl<<"CATEGORY->     STARTER"<<endl<<"COOKING TIME-> 15 Min"<<endl<<"CALORIES->     87"<<endl<<"FATS->         8"<<endl<<"CARBS->        5"<<endl<<"PROTEINS->     3"<<endl;
 
 
     }
