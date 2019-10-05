@@ -1,0 +1,113 @@
+#include<iostream>
+#include<string>
+#include<conio.h>
+#include<stdio.h>
+
+
+using namespace std;
+
+int main()
+
+{
+
+
+    string a[10]={"Bread" ,"Butter","Cauliflower","Cheese","Fish","Eggs","Lemons", "Mushroom","Chicken","Tomato"};
+    int b[10]={4,15,4,10,2,5,4,4,4,5};
+    int i=0;
+    cout<<"ENTER THE DATE WHEN ITEMS ARE BOUGTH  in DD MM YYYY");
+    cin>>m>>m1>>m2;
+    cout<<"ENTER THE DATE OF USEAGE IN DD MM YYYY");
+    
+    for( i=0;i<=9;i++)
+    { cout.setf(ios::left);
+cout.width(17);
+        cout<<a[i];
+        cout<<b[i]<<endl;
+
+    }
+int a1[10];
+string b1[10];
+cout<<"ENTER DAYS OF  CORRESPONDING ITEMS"<<endl;
+for(i=0;i<10;i++)
+{ cout.setf(ios::left);
+cout.width(17);
+    cout<<a[i];
+    cin>>a1[i];
+    }
+    cout<<"CONDITION OF ITEMS"<<endl;
+    int j=0;
+    for(i=0;i<10;i++)
+{cout.setf(ios::left);
+cout.width(17);
+   cout<<a[i]   ;
+   if(b[i]-a1[i]<=0)
+    {
+            cout<<"EXPIERED"<<endl;
+            b1[j]=a[i];
+            j++;
+    }
+   else
+   {
+    cout<<b[i]-a1[i]<<endl;
+
+    }
+}
+cout<<"CHOOSE YOUR ITEMS"<<endl;
+string c[3];
+cin>>c[0]>>c[1]>>c[2];
+int k=0;
+for(i=0;i<j;i++)
+{
+if(c[0].compare(b1[i])==0||c[1].compare(b1[i])==0||c[3].compare(b1[i])==0)
+{
+    k++;
+}
+}
+
+int k1=0;
+for(i=0;i<10;i++)
+{
+if(c[0].compare(a[i])==0||c[1].compare(a[i])==0||c[3].compare(a[i])==0)
+{
+    k1++;
+}
+}
+
+
+if(k1==3)
+{
+if(k!=0)
+{
+    cout<<"ITEMS USED ARE ROTTEN";
+}
+else
+    {
+  if(c[0].compare("Egg")==0||c[1].compare("Egg")==0||c[2].compare("Egg")==0)
+  {
+      if(c[0].compare("Bread")==0||c[1].compare("Bread")==0||c[2].compare("Bread")==0)
+      {
+
+          if(c[0].compare("Butter")==0||c[1].compare("Butter")==0||c[2].compare("Butter")==0||c[0].compare("Cheese")==0||c[1].compare("Cheese")==0||c[2].compare("Cheese")==0)
+            cout<<"EGGS ON TOAST"<<endl<<"CATEGORY     ->Breakfast"<<endl<<"COOKING TIME-> 10 Min"<<endl<<"CALORIES     ->189"<<endl<<"FATS        ->12"<<endl<<"CARBS        ->13"<<endl<<"PROTEINS     ->8";
+      }
+  }
+
+
+            if(c[0].compare("Cauliflower")==0||c[1].compare("Cauliflower")==0||c[2].compare("Cauliflower")==0)
+      cout<<"CAULIFLOWER TOTS"<<endl<<"CATEGORY->     Breakfast"<<endl<<"COOKING TIME-> 20 Min"<<endl<<"CALORIES->     107"<<endl<<"FATS->         13"<<endl<<"CARBS->        8"<<endl<<"PROTEINS->6"<<endl;
+            if((c[0].compare("Tomato")==0||c[1].compare("Tomato")==0||c[2].compare("Tomato")==0)&&(c[0].compare("Mushroom")==0||c[1].compare("Mushroom")==0||c[2].compare("Mushroom")==0))
+      cout<<"VEGGI WRAPS"<<endl<<"CATEGORY->     ENTREE BREAKFAST"<<endl<<"COOKING TIME-> 15 Min"<<endl<<"CALORIES->     67"<<endl<<"FAT->         08"<<endl<<"CARBS->        05"<<endl<<"PROTEINS->     4"<<endl;
+            if(c[0].compare("Chicken")==0||c[1].compare("Chicken")==0||c[2].compare("Chicken")==0)
+      cout<<"RAUNCH CHICKEN "<<endl<<"CATEGORY->    ENTREE CHICKEN"<<endl<<"COOKING TIME->50 Min"<<endl<<"CALORIES->    276"<<endl<<"FATS->         6"<<endl<<"CARBS->        3"<<endl<<"PROTEINS->     49"<<endl;
+            if(c[0].compare("Fish")==0||c[1].compare("Fish")==0||c[2].compare("Fish")==0)
+      cout<<"CRISP BAKED FILLETS"<<endl<<"CATEGORY->   SEAFOOD"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    263"<<endl<<"FATS->         9"<<endl<<"CARBS->        37"<<endl<<"PROTEINS->     9"<<endl;
+            if(c[0].compare("Bread")==0||c[1].compare("Bread")==0||c[2].compare("Bread")==0)
+      cout<<"STUFFED BREAD"<<endl<<"CATEGORY->    STARTER"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    87"<<endl<<"FATS->         8"<<endl<<"CARBS->        5"<<endl<<"PROTEINS->     3"<<endl;
+
+
+    }
+}
+else
+    cout<<"ITEMS NOT IN THE REFRIGERATOR"<<endl;
+return 0;
+}
