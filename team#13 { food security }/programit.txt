@@ -9,7 +9,7 @@ int func(int d,int m,int y);
 
 
 int main()
-//START OF MAIN
+//STTART OF MAIN
 {
 
 
@@ -67,6 +67,7 @@ cout<<"ENTER THE NUMBER OF DISHES"<<endl;
 int n1_;
 cin>>n1_;
 cout<<"CHOOSE YOUR ITEMS"<<endl;
+int low=0;
 //choosing number of items
 
 if(n1_==3)
@@ -106,22 +107,28 @@ else
       {
 
           if(c[0].compare("Butter")==0||c[1].compare("Butter")==0||c[2].compare("Butter")==0||c[0].compare("Cheese")==0||c[1].compare("Cheese")==0||c[2].compare("Cheese")==0)
-            cout<<"EGGS ON TOAST"<<endl<<"CATEGORY     ->Breakfast"<<endl<<"COOKING TIME-> 10 Min"<<endl<<"CALORIES     ->189"<<endl<<"FATS        ->12"<<endl<<"CARBS        ->13"<<endl<<"PROTEINS     ->8";
+           {
+    low++; cout<<"EGGS ON TOAST"<<endl<<"CATEGORY     ->Breakfast"<<endl<<"COOKING TIME-> 10 Min"<<endl<<"CALORIES     ->189"<<endl<<"FATS        ->12"<<endl<<"CARBS        ->13"<<endl<<"PROTEINS     ->8";
       }
   }
-
+  }
 
             if(c[0].compare("Cauliflower")==0||c[1].compare("Cauliflower")==0||c[2].compare("Cauliflower")==0)
-      cout<<"CAULIFLOWER TOTS"<<endl<<"CATEGORY->     Breakfast"<<endl<<"COOKING TIME-> 20 Min"<<endl<<"CALORIES->     107"<<endl<<"FATS->         13"<<endl<<"CARBS->        8"<<endl<<"PROTEINS->6"<<endl;
-            if((c[0].compare("Tomato")==0||c[1].compare("Tomato")==0||c[2].compare("Tomato")==0)&&(c[0].compare("Mushroom")==0||c[1].compare("Mushroom")==0||c[2].compare("Mushroom")==0))
-      cout<<"VEGGI WRAPS"<<endl<<"CATEGORY->     ENTREE BREAKFAST"<<endl<<"COOKING TIME-> 15 Min"<<endl<<"CALORIES->     67"<<endl<<"FAT->         08"<<endl<<"CARBS->        05"<<endl<<"PROTEINS->     4"<<endl;
-            if(c[0].compare("Chicken")==0||c[1].compare("Chicken")==0||c[2].compare("Chicken")==0)
-      cout<<"RAUNCH CHICKEN "<<endl<<"CATEGORY->    ENTREE CHICKEN"<<endl<<"COOKING TIME->50 Min"<<endl<<"CALORIES->    276"<<endl<<"FATS->         6"<<endl<<"CARBS->        3"<<endl<<"PROTEINS->     49"<<endl;
-            if(c[0].compare("Fish")==0||c[1].compare("Fish")==0||c[2].compare("Fish")==0)
-      cout<<"CRISP BAKED FILLETS"<<endl<<"CATEGORY->   SEAFOOD"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    263"<<endl<<"FATS->         9"<<endl<<"CARBS->        37"<<endl<<"PROTEINS->     9"<<endl;
-            if(c[0].compare("Bread")==0||c[1].compare("Bread")==0||c[2].compare("Bread")==0)
-      cout<<"STUFFED BREAD"<<endl<<"CATEGORY->    STARTER"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    87"<<endl<<"FATS->         8"<<endl<<"CARBS->        5"<<endl<<"PROTEINS->     3"<<endl;
-
+     {
+    low++; cout<<"CAULIFLOWER TOTS"<<endl<<"CATEGORY->     Breakfast"<<endl<<"COOKING TIME-> 20 Min"<<endl<<"CALORIES->     107"<<endl<<"FATS->         13"<<endl<<"CARBS->        8"<<endl<<"PROTEINS->6"<<endl;
+          }  if((c[0].compare("Tomato")==0||c[1].compare("Tomato")==0||c[2].compare("Tomato")==0)&&(c[0].compare("Mushroom")==0||c[1].compare("Mushroom")==0||c[2].compare("Mushroom")==0))
+     {
+    low++; cout<<"VEGGI WRAPS"<<endl<<"CATEGORY->     ENTREE BREAKFAST"<<endl<<"COOKING TIME-> 15 Min"<<endl<<"CALORIES->     67"<<endl<<"FAT->         08"<<endl<<"CARBS->        05"<<endl<<"PROTEINS->     4"<<endl;
+          }  if(c[0].compare("Chicken")==0||c[1].compare("Chicken")==0||c[2].compare("Chicken")==0)
+      {
+    low++;cout<<"RAUNCH CHICKEN "<<endl<<"CATEGORY->    ENTREE CHICKEN"<<endl<<"COOKING TIME->50 Min"<<endl<<"CALORIES->    276"<<endl<<"FATS->         6"<<endl<<"CARBS->        3"<<endl<<"PROTEINS->     49"<<endl;
+          }  if(c[0].compare("Fish")==0||c[1].compare("Fish")==0||c[2].compare("Fish")==0)
+     {
+    low++; cout<<"CRISP BAKED FILLETS"<<endl<<"CATEGORY->   SEAFOOD"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    263"<<endl<<"FATS->         9"<<endl<<"CARBS->        37"<<endl<<"PROTEINS->     9"<<endl;
+          }  if(c[0].compare("Bread")==0||c[1].compare("Bread")==0||c[2].compare("Bread")==0)
+     {
+    low++; cout<<"STUFFED BREAD"<<endl<<"CATEGORY->    STARTER"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    87"<<endl<<"FATS->         8"<<endl<<"CARBS->        5"<<endl<<"PROTEINS->     3"<<endl;
+     }
 
     }
 }
@@ -165,21 +172,29 @@ else
       if(c[0].compare("Bread")==0||c[1].compare("Bread")==0||c[0].compare("Butter")==0||c[1].compare("Butter")==0||c[0].compare("Cheese")==0||c[1].compare("Cheese")==0)
       {
                   cout<<"EGGS ON TOAST"<<endl<<"CATEGORY     ->Breakfast"<<endl<<"COOKING TIME-> 10 Min"<<endl<<"CALORIES     ->189"<<endl<<"FATS        ->12"<<endl<<"CARBS        ->13"<<endl<<"PROTEINS     ->8";
-      }
+
+     low ++; }
   }
 
 
             if(c[0].compare("Cauliflower")==0||c[1].compare("Cauliflower")==0)
-      cout<<"CAULIFLOWER TOTS"<<endl<<"CATEGORY->     Breakfast"<<endl<<"COOKING TIME-> 20 Min"<<endl<<"CALORIES->     107"<<endl<<"FATS->         13"<<endl<<"CARBS->        8"<<endl<<"PROTEINS->6"<<endl;
-            if((c[0].compare("Tomato")==0||c[1].compare("Tomato")==0)&&(c[0].compare("Mushroom")==0||c[1].compare("Mushroom")==0))
-      cout<<"VEGGI WRAPS"<<endl<<"CATEGORY->     ENTREE BREAKFAST"<<endl<<"COOKING TIME-> 15 Min"<<endl<<"CALORIES->     67"<<endl<<"FAT->         08"<<endl<<"CARBS->        05"<<endl<<"PROTEINS->     4"<<endl;
-            if(c[0].compare("Chicken")==0||c[1].compare("Chicken")==0)
-      cout<<"RAUNCH CHICKEN "<<endl<<"CATEGORY->    ENTREE CHICKEN"<<endl<<"COOKING TIME->50 Min"<<endl<<"CALORIES->    276"<<endl<<"FATS->         6"<<endl<<"CARBS->        3"<<endl<<"PROTEINS->     49"<<endl;
+     {
+    low++; cout<<"CAULIFLOWER TOTS"<<endl<<"CATEGORY->     Breakfast"<<endl<<"COOKING TIME-> 20 Min"<<endl<<"CALORIES->     107"<<endl<<"FATS->         13"<<endl<<"CARBS->        8"<<endl<<"PROTEINS->6"<<endl;
+          }  if((c[0].compare("Tomato")==0||c[1].compare("Tomato")==0)&&(c[0].compare("Mushroom")==0||c[1].compare("Mushroom")==0))
+      {
+    low++;cout<<"VEGGI WRAPS"<<endl<<"CATEGORY->     ENTREE BREAKFAST"<<endl<<"COOKING TIME-> 15 Min"<<endl<<"CALORIES->     67"<<endl<<"FAT->         08"<<endl<<"CARBS->        05"<<endl<<"PROTEINS->     4"<<endl;
+          }  if(c[0].compare("Chicken")==0||c[1].compare("Chicken")==0)
+      {
+    low++;
+    }cout<<"RAUNCH CHICKEN "<<endl<<"CATEGORY->    ENTREE CHICKEN"<<endl<<"COOKING TIME->50 Min"<<endl<<"CALORIES->    276"<<endl<<"FATS->         6"<<endl<<"CARBS->        3"<<endl<<"PROTEINS->     49"<<endl;
             if(c[0].compare("Fish")==0||c[1].compare("Fish")==0)
-      cout<<"CRISP BAKED FILLETS"<<endl<<"CATEGORY->   SEAFOOD"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    263"<<endl<<"FATS->         9"<<endl<<"CARBS->        37"<<endl<<"PROTEINS->     9"<<endl;
+      {
+    low++;
+    }cout<<"CRISP BAKED FILLETS"<<endl<<"CATEGORY->   SEAFOOD"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    263"<<endl<<"FATS->         9"<<endl<<"CARBS->        37"<<endl<<"PROTEINS->     9"<<endl;
             if(c[0].compare("Bread")==0||c[1].compare("Bread")==0)
-      cout<<"STUFFED BREAD"<<endl<<"CATEGORY->    STARTER"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    87"<<endl<<"FATS->         8"<<endl<<"CARBS->        5"<<endl<<"PROTEINS->     3"<<endl;
-
+     {
+    low++; cout<<"STUFFED BREAD"<<endl<<"CATEGORY->    STARTER"<<endl<<"COOKING TIME->15 Min"<<endl<<"CALORIES->    87"<<endl<<"FATS->         8"<<endl<<"CARBS->        5"<<endl<<"PROTEINS->     3"<<endl;
+     }
 
     }
 }
@@ -187,6 +202,8 @@ else
 else
     cout<<"ITEMS NOT IN THE REFRIGERATOR"<<endl;
 }
+if(low==0)
+    cout<<"NO SUCH DISHES FORMED"<<endl;
 return 0;
 }
   //function to calculate the date difference
