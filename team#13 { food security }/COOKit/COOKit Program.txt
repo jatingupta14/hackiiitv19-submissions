@@ -9,7 +9,7 @@ int func(int d,int m,int y);
 
 
 int main()
-//STTART OF MAIN
+//START OF MAIN
 {
 
 
